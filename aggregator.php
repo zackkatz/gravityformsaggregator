@@ -158,7 +158,7 @@ if (class_exists("GFForms")) {
                             "name"     => "enableAggregator",
                             "tooltip"  => __("Activate this setting to feed entries from this form to another Gravity Forms installation on a different site."),
                             "label"    => __("Remote Aggregation", "gravitycontacts"),
-                            "onchange" => "jQuery(this).parents('form').submit();", // refresh the page so show/hide the settings below. Settings are not saved until the save button is pressed.
+                            "onclick"  => "jQuery(this).closest('form').submit();", // refresh the page so show/hide the settings below. Settings are not saved until the save button is pressed.
                             "type"     => "checkbox",
                             "choices"  => array(
                                 array(
